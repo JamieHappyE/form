@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+*{
+	margin-left: 9px;
+}
+body{
+    background:#1c1c1c;
+    color: white;
+}
+.all{
+     margin: 0 auto;
+     width: 320px;
+     height: 350px;
+     margin-top: 66px;
+     background:#545454;
+     color: white;
+     display: block;
+     text-align: center;
+     padding:25px 0 0 0;
+     font-size: 14px;
+}
+form{
+     margin-left: -25px;
+}
+.num{
+     margin-left: -4px;
+     outline: none;
+}
+.yzm{
+     margin: 30px 0 0 -55px;
+     outline: none;
+}
+.fs{
+     margin: 0 -50px 0 -4px;
+     border:   0   solid   #000000;
+}
+.sub{
+     margin: 30px;
+     border:   0   solid   #000000;
+}
+
+.l{
+     text-decoration: none;
+     display: inline-block;
+     color:rgb(235, 105, 45);
+     font-size: 12px;
+     margin: -15px 0 0 210px;
+}
+ul li{
+     margin:0 20px 0 0;
+     text-align: center;
+}
+ul{
+     font-size: 10px;
+     color: #696868;
+     margin: 190px 0 0 580px;
+     display: flex;
+     text-align: center;
+}
+.left{
+     margin-left: -30px;
+     padding-bottom: 2px;
+}
+.left:link{
+     color: white;
+}
+.left:visited{
+     color: rgb(235, 105, 45);
+}
+.left:hover{
+     border-bottom: 1px solid rgb(235, 105, 45);
+}
+.right{
+     margin-left: 90px;
+}
+.right:link{
+     color: white;
+}
+.right:visited{
+     color: rgb(235, 105, 45);
+}
+.right:hover{
+    border-bottom: 1px solid rgb(235, 105, 45);
+}
+a{
+     color: white;
+     text-decoration: none;
+}
+
+ol,li{
+	list-style: none;
+ }
+ol{
+	position:relative;
+	display:flex;
+}
+ol li{
+	flex:1;
+	height:15px;
+}
+.r{
+	display:none;
+}
+.r+label{
+	display:block;
+    width:100%;
+    height:100%;
+    font-size:14px;
+    text-align: center;
+    line-height:15px;
+    color:rgb(255, 255, 255);
+    margin: 30px 30px 0 -35px;
+}
+.r+label+div{
+	display:none;
+    position: absolute;
+    left:0;
+    top:60px;
+    margin: -5px 0 0 0;
+}
+.r+label:hover{
+	border-bottom: 1px solid rgb(235, 105, 45);
+}
+.r:checked+label{
+	color:rgb(235, 105, 45);
+}
+.r:checked+label+div{
+	display:block;
+}
+</style>
+</head>
+
+<body>
+<form action="/register" method="post">
+    <span class="all">
+      <img src="下载.png" width="72px" height="40px">
+      <ol>
+        <li>
+          <input class="r" type="radio" name="check" id="active1" checked>
+          <label for="active1">验证码登录</label>
+          <div>
+            <input class="num" type="text" id="user" required placeholder="手机号" 
+            style="width:255px; height: 25px; padding-left: 10px;" size="11"/>
+            
+            <input class="yzm" type="text"  required placeholder="验证码" 
+            style="width: 140px; height: 25px; padding-left: 10px;"/>
+            
+            <input class="fs" type="submit" value="发送验证码" 
+            style="width: 110px; height: 30px;color: white; background-color:rgb(235, 105, 45);"/>
+            
+            <input class="sub" type="submit" value="登录"
+             style="border-radius: 30px; width: 270px; height: 30px;color: white; background-color: rgb(235, 105, 45);"/>
+             
+            <a class="l" href="#">注册用户</a>
+          </div>
+        </li>
+        <li>
+        <input class="r" type="radio" name="check" id="active2">
+        <label for="active2">密码登录</label>
+        <div>
+          <input type="email" id="user" required placeholder="邮箱" 
+          style="width:255px; height: 25px;margin: 0 0 30px 0 ;" size="11"/>
+          
+          <input type="password"  required placeholder="密码" 
+          style="width: 255px; height: 25px;margin: 0;"/>
+          
+          <p style="font-size: 10px;margin: 30px 0 0 200px;color: rgb(146, 140, 140);">
+          <a href="https://123ll4321.github.io/bd/wj.html">忘记密码</a></p>
+          
+          <input type="submit" value="登录" 
+          style=" border:0 solid #000;border-radius: 30px; width: 270px;margin: 20px 0 20px 0 ; height: 30px;color: white; background-color: rgb(235, 105, 45);"/>
+          
+          <a class="l" href="#">注册用户</a>
+        </div>
+      </li>
+    </ol>
+    </span>
+    
+    </form>
+</body>
+</html>
